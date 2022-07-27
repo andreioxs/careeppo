@@ -38,11 +38,11 @@ function App() {
           </div>
         
         <div className='right-nav'>
-          <Link to="/">
+          {/* <Link to="/">
             <div className='header'>
               Home
             </div>
-          </Link>
+          </Link> */}
           <Link to="/howitworks">
             <div className='header'>
             How it works
