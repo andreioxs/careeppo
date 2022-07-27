@@ -1,5 +1,5 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
@@ -22,23 +22,21 @@ import CompanyOverview from "./Pages/CompanyOverview";
 import CompanyEvaluation from "./Pages/CompanyEvaluation";
 import CompanyReviewApplicant from "./Pages/CompanyReviewApplicant";
 import CompanyContactApplicant from "./Pages/CompanyContactApplicant";
-import image from "./images/image_bg.png";
+import image from "./images/careeppo.png";
 import ErrorPage from "./Pages/ErrorPage";
 
 
 
 function App() {
   return (
-  <body>
     <Router>
-      <Navbar bg="success" variant="light">
       <Container fluid>
-  
-        <div className='left-nav'>
+      <Navbar >  
+        
           <div className='image'>
             <Link to="/"><img src={image} alt="careeppo" /></Link>
           </div>
-        </div>
+        
         <div className='right-nav'>
           <Link to="/">
             <div className='header'>
@@ -56,11 +54,9 @@ function App() {
             </div>
           </Link>
         </div>  
-      
-  
-      </Container>
       </Navbar>
-      <Container style={{background: "#31724B", border: "solid 1px black"}}>
+      </Container>
+      <Container style={{background: "transparent"}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/howitworks" element={<HowItWorks />} />
@@ -84,7 +80,7 @@ function App() {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       </Container>
-    </Router></body>
+    </Router>
   );
 }
 
