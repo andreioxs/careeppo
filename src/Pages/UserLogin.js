@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-import UserProfile from "./UserProfile"
+import UserOverview from "./UserOverview"
 import UserRegister from "./UserRegister";
 
 // function UserLogin() {
@@ -58,7 +58,7 @@ function App() {
                 />
                 <label className="form-check-label">Save me</label>
               </div>
-              <Link to="/userprofile">
+              <Link to="/useroverview">
                 <button type="submit" className="btn btn-primary">
                 Submit
                 </button>

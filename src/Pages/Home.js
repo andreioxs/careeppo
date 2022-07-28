@@ -19,9 +19,9 @@ function Home() {
     // </div>
       <Row>
         <Col md="6">
-          <div className="d-flex p-5 justify-content-evenly vh-100 ">
+          <div className="d-flex p-5 justify-content-evenly vh-100">
             <Link to="/userlogin">
-              <Card style={{ background:`url(${login_img_dev})`, width: '30rem', height: '40rem' }}>
+              <Card style={{ background:`url(${login_img_dev})`, width: '30rem', height: '40rem', backgroundSize:'cover'}}>
 
               </Card>
             </Link>
@@ -30,7 +30,7 @@ function Home() {
         <Col md="6">
           <div className="d-flex p-5 justify-content-evenly vh-100 ">
             <Link to="/companylogin">
-              <Card style={{ background:`url(${login_img_com})`, width: '30rem', height: '40rem' }}>
+              <Card style={{ background:`url(${login_img_com})`, width: '30rem', height: '40rem', backgroundSize:'cover' }}>
                 
               </Card>
             </Link>
