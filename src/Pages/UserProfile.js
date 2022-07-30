@@ -25,14 +25,14 @@ function UserProfile() {
         </Link>
       </div>
       <Container fluid="lg" className='d-flex'>
-        <Col lg="4" className='justify-content-center'>
+        <Col md="4" className='justify-content-center'>
           <Row className='offset-1'>
             <div>
               <img src={ash_pp} style={{ height: '20rem' }} />
             </div>
           </Row>
           <Row>
-            <div lg="12" className='d-flex justify-content-evenly '>
+            <div md="12" className='d-flex justify-content-evenly '>
               <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                 Pet
               </div>
@@ -45,7 +45,7 @@ function UserProfile() {
             </div>
           </Row>
           <Row className='d-flex justify-content-evenly '>
-            <div lg="12" className="bg-white rounded my-4 opacity-75 w-75">
+            <div md="12" className="bg-white rounded my-4 opacity-75 w-75">
               <div className="text-center p-3">
                 <h2 className='fw-bold fs-1'>Something interesting?!</h2><br></br>
                 <p>Sport, Food, </p>
@@ -53,7 +53,7 @@ function UserProfile() {
             </div>
           </Row>
         </Col>
-        <Col className='h-25 w-100% justify-content-center' lg="8">
+        <Col className='h-25 w-100% justify-content-center' md="8">
           <Row>
             <div className="bg-white rounded mb-2 opacity-75">
               <div className="text-center p-2">
@@ -82,15 +82,15 @@ function UserProfile() {
             <div className="bg-white rounded my-2 opacity-75">
               <h2 className=' text-center fw-bold fs-4 py-2'>Professional Cat Petter</h2><br></br>
               <div className=" d-flex text-center px-2">
-                <div lg="2" className="text-center w-75">
+                <div md="2" className="text-center w-75">
                   <div className='fw-bold fs-5 mx-4'>2015 - 2022</div>
                 </div>
-                <div lg="8" className="text right">
+                <div md="8" className="text right">
                   <p>I like cats - they are so cute and don’t want to harm anybody. I like beeing their slave and do everything they want.
                     I discovered my passion for cats in my childhood, because a wild Pikachu attacked me and Meowth saved me - since then I'm her slave.</p>
                 </div>
               </div>
-              <div lg="2" className='d-flex justify-content-evenly'>
+              <div md="2" className='d-flex justify-content-evenly'>
                 <div className="bg-success my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                   Pet
                 </div>
@@ -104,14 +104,14 @@ function UserProfile() {
             <div className="bg-white rounded my-2 opacity-75">
               <h2 className=' text-center fw-bold fs-4 py-2'>Professional Pokémon Trainer</h2><br></br>
               <div className=" d-flex text-center px-2">
-                <div lg="2" className="text-center w-75">
+                <div md="2" className="text-center w-75">
                   <div className='fw-bold fs-5 mx-4'>2015 - 2022</div>
                 </div>
-                <div lg="8" className="text right">
+                <div md="8" className="text right">
                   <p>I started with only one Pokémon and catched over the years all 150 Pokémon - i refuse to accept any other Pokémon! Since I found my real passion and due to the reason that there are way to many Names to remember, I decided to end my career as Arena Champion of all 8 Citys.</p>
                 </div>
               </div>
-              <div lg="12" className='d-flex justify-content-evenly '>
+              <div md="12" className='d-flex justify-content-evenly '>
                 <div className="bg-success my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                   Pet
                 </div>

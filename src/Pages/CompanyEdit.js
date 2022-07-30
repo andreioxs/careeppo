@@ -26,7 +26,7 @@ function UserProfile() {
         </Link>
       </div>
       <Container fluid="lg" className='d-flex'>
-        <Col className='justify-content-center' lg="8">
+        <Col className='justify-content-center' md="8">
           <Row>
             <div className="bg-white rounded mb-2 opacity-75">
               <div className="text-center p-2">
@@ -51,14 +51,14 @@ function UserProfile() {
           </Row>
         </Col>
         
-        <Col className='justify-content-center w-25 offset-1' lg="4">
+        <Col className='justify-content-center w-25 offset-1' md="4">
           <Row>
             <div>
               <img src={team_rocket} style={{ height: '20rem' }} />
             </div>
           </Row>
           <Row>
-            <div lg="12" className='d-flex justify-content-evenly '>
+            <div md="12" className='d-flex justify-content-evenly '>
               <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                 Pet
               </div>

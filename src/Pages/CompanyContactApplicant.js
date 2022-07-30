@@ -6,12 +6,15 @@ import CompanyEvaluation from "./CompanyEvaluation";
 
 function CompanyReviewApplicant() {
   return (
-    <div>
-      <Link to="/companyoverview">Back to Company Overview</Link><br></br>
-      <Link to="/companyevaluation">Job Overview & Evaluation</Link><br></br>
+    // <div>
+    //   <Link to="/companyoverview">Back to Company Overview</Link><br></br>
+    //   <Link to="/companyevaluation">Job Overview & Evaluation</Link><br></br>
       
-      Contact Form with a calendar
-    </div>
+    //   Contact Form with a calendar
+    // </div>
+
+    <>
+    </>
   )
 }
 

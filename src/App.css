@@ -1,7 +1,12 @@
 
 body{
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(49, 114, 75) 35%, #000000f1 100%);
+  /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(49, 114, 75) 35%, #000000f1 100%); */
+  /* background-color: #b8c6db;
+background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
+background-color: green;
+    background-image: radial-gradient(ellipse at bottom,#008b0c 5%,transparent 60%),linear-gradient(136deg,transparent,#00ac2b 290%),linear-gradient(115deg,#00c9b8,transparent 40%),linear-gradient(180deg,transparent 0,#007928 70%),radial-gradient(ellipse at -70% -180%,transparent 80%,#036600 0),radial-gradient(ellipse at bottom,#168600 40%,transparent 80%),radial-gradient(ellipse at 5% 340%,transparent 80%,#00d636 0);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 .navbar{
