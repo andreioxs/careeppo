@@ -30,9 +30,11 @@ import ErrorPage from "./Pages/ErrorPage";
 function App() {
   return (
     <Router>
-      <Container fluid>
+      <Container sm='12' md='12' xl='12'>
       <Navbar >  
         
+      {/* <div class="col col-md-6 col-lg-2"></div> */}
+
           <div className='image'>
             <Link to="/"><img src={image} alt="careeppo" /></Link>
           </div>
@@ -56,7 +58,7 @@ function App() {
         </div>  
       </Navbar>
       </Container>
-      <Container style={{background: "transparent"}}>
+      <Container sm='12' md='12' xl='12' style={{background: "transparent"}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/howitworks" element={<HowItWorks />} />

@@ -37,7 +37,7 @@ function UserRegister() {
                 />
               </div>
               <div className="d-grid">
-              <Link to="/userprofile">
+              <Link to="/useroverview">
                   <button type="submit" className="btn btn-primary">Sign Up</button>
               </Link>
               </div>
