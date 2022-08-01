@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import team_rocket from '../images/Jobdetails/team_rocket.jpg';
+import Evaluation from '../Components/Evaluation.js'
 
 function UserProfile() {
   return (
@@ -86,8 +87,51 @@ function UserProfile() {
               </div>
             </div>
           </Row>
-          
-          
+          <Row>
+            <div className="bg-white rounded mb-2 opacity-75">
+              <div className="text-center p-2">
+                <h2 className='fw-bold fs-1'>Search/Filter Bar</h2><br></br>
+              </div>
+            </div>
+          </Row>
+          <Container className="bg-white rounded my-2  w-100">
+          <Row>
+            
+              <div className="text-center p-2">
+                <div>{Evaluation}</div>
+              </div>
+            
+          </Row><hr></hr>
+          <Row>
+            <div className="bg-white rounded p-2">
+              <div className="text-center p-2">
+                <div>{Evaluation}</div>
+              </div>
+            </div>
+          </Row><hr></hr>
+          <Row>
+            <div className="bg-white rounded p-2">
+              <div className="text-center p-2">
+                <div>{Evaluation}</div>
+              </div>
+            </div>
+          </Row><hr></hr>
+          <Row>
+            <div className="bg-white rounded p-2">
+              <div className="text-center p-2">
+                <div>{Evaluation}</div>
+              </div>
+            </div>
+          </Row><hr></hr>
+          <Row>
+            <div className="bg-white rounded p-2">
+              <div className="text-center p-2">
+                <div>{Evaluation}</div>
+              </div>
+            </div>
+          </Row>
+
+          </Container>
         </Col>
       </Container>
     </>

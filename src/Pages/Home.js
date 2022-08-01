@@ -17,8 +17,8 @@ function Home() {
     //   <div style={{background:`url(${login_img_dev})`}} className="h-75 w-100 m-5"></div>
     //   <div style={{background:`url(${login_img_com})`}} className="h-75 w-100 m-5"></div>
     // </div>
-      <Row>
-        <Col md="6">
+      <Row xs='12'>
+        <Col xs='3'md="6">
           <div className="d-flex p-5 justify-content-evenly d-md-vh-100"dqdwqdpkjdpwqk  pokpok        >
             <Link to="/userlogin">
               <Card style={{ background:`url(${login_img_dev})`, width: '30rem', height: '40rem', backgroundSize:'cover'}}>
@@ -27,7 +27,7 @@ function Home() {
             </Link>
           </div>
         </Col>
-        <Col md="6">
+        <Col xs='3'md="6">
           <div className="d-flex p-5 justify-content-evenly d-md-vh-100 ">
             <Link to="/companylogin">
               <Card style={{ background:`url(${login_img_com})`, width: '30rem', height: '40rem', backgroundSize:'cover' }}>
