@@ -34,44 +34,44 @@ function UserOverview() {
 
     // <> FRAGMENT 
     <>
-      <Row className='justify-content-evenly'>
+      <Row className='justify-content-center'>
         <Col xs="12">
-          <div className="bg-white my-3 rounded-5 opacity-75">
-            <div className="text-center p-2 ">
-              <h2 className='fw-bold'>Welcome back Hans-Jürgen,</h2><br></br>
+          <div className="bg-white mx-5 rounded-4 opacity-75">
+            <div className="text-center text-dark p-2 ">
+              <h2 className='fw-bold '>Welcome back Hans-Jürgen,</h2><br></br>
               <p>random motivational quotes :-)</p>
             </div>
           </div>
         </Col>
       </Row>
       <Row className='justify-content-evenly'>
-        <Col sm="4" md="3" xl="2">
+        <Col xs="12" md="4">
           <Link to="/userprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold">
+            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
               Tests
             </div>
           </Link>
         </Col>
-        <Col sm="4" md="3" xl="2">
+        <Col xs="12" md="4">
           <Link to="/userprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold">
+            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
               Check CV
             </div>
           </Link>
         </Col>
-        <Col sm="4" md="3" xl="2">
+        <Col xs="12" md="4">
           <Link to="/userprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold">
+            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
               User Profile
             </div>
           </Link>
         </Col>
       </Row>
       <Row>
-        <Col sm="12">
+        <Col xs="12">
           <h2 className="text-white my-4">Our recommendations</h2>
         </Col>
-        <Col sm="12" md="4" lg="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={hacker} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -83,7 +83,7 @@ function UserOverview() {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4" md="4" xl="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={e_sport} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -95,7 +95,7 @@ function UserOverview() {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4" md="4" xl="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={team_rocket} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -109,10 +109,10 @@ function UserOverview() {
         </Col>
       </Row>
       <Row>
-        <Col sm="12">
+        <Col xs="12">
           <h2 className="text-white my-4">Matching your Skills</h2>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={frontend_dev} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -124,7 +124,7 @@ function UserOverview() {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={backend_dev} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -136,7 +136,7 @@ function UserOverview() {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={scrum_master} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -150,10 +150,10 @@ function UserOverview() {
         </Col>
       </Row>
       <Row>
-        <Col sm="12">
+        <Col xs="12">
           <h2 className="text-white my-4">You might also be interested in</h2>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={Data_analyst} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -165,7 +165,7 @@ function UserOverview() {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={date_science} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -177,7 +177,7 @@ function UserOverview() {
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
             <Link to="/user_jobdetail"><Card.Img variant="top" src={pokemon_police} style={{ height: '18rem' }} /></Link>
             <Card.Body>

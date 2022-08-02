@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import UserOverview from "./UserOverview"
 import UserRegister from "./UserRegister";
@@ -11,7 +11,7 @@ import UserRegister from "./UserRegister";
 //       <div>
 //         <Link to="/userprofile">User Profile</Link><br></br>
 //         <Link to="/userregister">User Registration</Link>
-        
+
 //       </div>
 //     </Container>
 //   )
@@ -24,10 +24,10 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="row d-flex justify-content-center">
-          <div className="col-xl-8 rounded-lg justify-content-center" style={{backgroundColor:'#fffffff2'}}>
-          <h3>Sign In</h3>
+          <div className="col-xl-8 rounded-4 p-4 justify-content-center" style={{ backgroundColor: '#fffffff2' }}>
+            <h3>Sign In</h3>
             <form id="loginform" >
-              <div className="form-group">
+              <div className="form-group my-3">
                 <label>Email address</label>
                 <input
                   type="email"
@@ -37,10 +37,9 @@ function App() {
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
                 />
-                <small id="emailHelp" className="text-danger form-text">
-                </small>
+
               </div>
-              <div className="form-group">
+              <div className="form-group my-3">
                 <label>Password</label>
                 <input
                   type="password"
@@ -48,7 +47,7 @@ function App() {
                   id="exampleInputPassword1"
                   placeholder="Password"
                 />
-                
+
               </div>
               <div className="form-group form-check">
                 <input
@@ -60,13 +59,13 @@ function App() {
               </div>
               <Link to="/useroverview">
                 <button type="submit" className="btn btn-primary">
-                Submit
+                  Submit
                 </button>
               </Link>
             </form><br></br>
             <Link to="/userregister">No Account? Sign up here. </Link>
           </div>
-          
+
         </div>
       </div>
     </div>

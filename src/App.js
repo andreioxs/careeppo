@@ -19,6 +19,7 @@ import CompanyLogin from "./Pages/CompanyLogin";
 import CompanyProfile from "./Pages/CompanyProfile";
 import CompanyEdit from "./Pages/CompanyEdit";
 import CompanyOverview from "./Pages/CompanyOverview";
+import CompanyJobAdd from "./Pages/CompanyJobAdd";
 import CompanyEvaluation from "./Pages/CompanyEvaluation";
 import CompanyReviewApplicant from "./Pages/CompanyReviewApplicant";
 import CompanyContactApplicant from "./Pages/CompanyContactApplicant";
@@ -76,6 +77,7 @@ function App() {
         <Route path="/companyprofile" element={<CompanyProfile />} />
         <Route path="/companyedit" element={<CompanyEdit />} />
         <Route path="/companyoverview" element={<CompanyOverview />} />
+        <Route path="/companyjobadd" element={<CompanyJobAdd />} />
         <Route path="/companyevaluation" element={<CompanyEvaluation />} />
         <Route path="/companyreviewapplicant" element={<CompanyReviewApplicant />} />
         <Route path="/companycontactapplicant" element={<CompanyContactApplicant />} />

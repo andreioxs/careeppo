@@ -12,14 +12,14 @@ function UserProfile() {
   return (
 
     <>
-      <div className='d-flex w-100 offset-1'>
+      <div xs='12' className='d-flex justify-content-end'>
         <Link to="/useredit" style={{ textDecoration: 'none' }}>
-          <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
+          <div xs='6' className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
             Edit your Profile
           </div>
         </Link><br></br>
         <Link to="/useroverview" style={{ textDecoration: 'none' }}>
-          <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
+          <div xs='6' className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
             Your Overview
           </div>
         </Link>
@@ -53,7 +53,7 @@ function UserProfile() {
             </div>
           </Row>
         </Col>
-        <Col className='h-25 w-100% justify-content-center' md="8">
+        <Col md="8" className='w-100% justify-content-center'>
           <Row>
             <div className="bg-white rounded mb-2 opacity-75">
               <div className="text-center p-2">
@@ -85,7 +85,7 @@ function UserProfile() {
                 <div md="2" className="text-center w-75">
                   <div className='fw-bold fs-5 mx-4'>2015 - 2022</div>
                 </div>
-                <div md="8" className="text right">
+                <div md="8" className="text-start">
                   <p>I like cats - they are so cute and don’t want to harm anybody. I like beeing their slave and do everything they want.
                     I discovered my passion for cats in my childhood, because a wild Pikachu attacked me and Meowth saved me - since then I'm her slave.</p>
                 </div>
@@ -107,7 +107,7 @@ function UserProfile() {
                 <div md="2" className="text-center w-75">
                   <div className='fw-bold fs-5 mx-4'>2015 - 2022</div>
                 </div>
-                <div md="8" className="text right">
+                <div md="8" className="text-start">
                   <p>I started with only one Pokémon and catched over the years all 150 Pokémon - i refuse to accept any other Pokémon! Since I found my real passion and due to the reason that there are way to many Names to remember, I decided to end my career as Arena Champion of all 8 Citys.</p>
                 </div>
               </div>

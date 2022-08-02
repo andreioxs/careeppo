@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import CompanyProfile from "./CompanyProfile";
-import CompanyEvaluation from "./CompanyEvaluation";
+import CompanyJobAdd from "./CompanyJobAdd";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -40,7 +40,7 @@ function CompanyOverview() {
         <Col>
         </Col>
         <Col sm="2">
-        <Link to="/companyprofile" style={{ textDecoration: 'none' }}>
+        <Link to="/companyjobadd" style={{ textDecoration: 'none' }}>
           <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold">
             Add new Job
           </div>
