@@ -24,28 +24,28 @@ function UserProfile() {
           </div>
         </Link>
       </div>
-      <Container fluid="lg" className='d-flex'>
+      <Container xs="12" className='d-flex'>
         <Col md="4" className='justify-content-center'>
-          <Row className='offset-1'>
-            <div>
-              <img src={ash_pp} style={{ height: '20rem' }} />
+          <Row className='justify-content-center'>
+            <div className='offset-1'>
+              <img src={ash_pp} style={{ height: '20rem', width:'100%' }} />
             </div>
           </Row>
           <Row>
-            <div md="12" className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+            <div xs="12" md="4" className='d-flex justify-content-evenly '>
+              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
                 Pet
               </div>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
                 Slave
               </div>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
                 Pokémon
               </div>
             </div>
           </Row>
           <Row className='d-flex justify-content-evenly '>
-            <div md="12" className="bg-white rounded my-4 opacity-75 w-75">
+            <div xs="12" md="12" className="bg-white rounded my-4 opacity-75 w-75">
               <div className="text-center p-3">
                 <h2 className='fw-bold fs-1'>Something interesting?!</h2><br></br>
                 <p>Sport, Food, </p>
@@ -58,7 +58,7 @@ function UserProfile() {
             <div className="bg-white rounded mb-2 opacity-75">
               <div className="text-center p-2">
                 <h2 className='fw-bold fs-1'>Welcome back Hans-Jürgen,</h2><br></br>
-                <p>random motivational quotes :-)</p>
+                <p className='fs-5'>random motivational quotes :-)</p>
               </div>
             </div>
           </Row>
@@ -91,10 +91,10 @@ function UserProfile() {
                 </div>
               </div>
               <div md="2" className='d-flex justify-content-evenly'>
-                <div className="bg-success my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+                <div className="bg-warning my-4 p-3 text-center rounded-5 text-dark fw-bold w-25">
                   Pet
                 </div>
-                <div className="bg-success my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 pacity-75">
+                <div className="bg-warning my-4 p-3 text-center rounded-5 text-dark fw-bold w-25">
                   Slave
                 </div>
               </div>
@@ -112,10 +112,10 @@ function UserProfile() {
                 </div>
               </div>
               <div md="12" className='d-flex justify-content-evenly '>
-                <div className="bg-success my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+                <div className="bg-warning my-4 p-3 text-center rounded-5 text-dark fw-bold w-25">
                   Pet
                 </div>
-                <div className="bg-success my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 pacity-75">
+                <div className="bg-warning my-4 p-3 text-center rounded-5 text-dark fw-bold w-25">
                   Slave
                 </div>
               </div>

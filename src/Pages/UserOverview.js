@@ -79,7 +79,7 @@ function UserOverview() {
               <Card.Text>
                 Part-time | Non-Profit Organization
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -91,7 +91,7 @@ function UserOverview() {
               <Card.Text>
                 Full-time | Soccer
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -103,7 +103,7 @@ function UserOverview() {
               <Card.Text>
                 Full-Time | World Domination
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -120,7 +120,7 @@ function UserOverview() {
               <Card.Text>
                 Full-time | Marketing
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -132,7 +132,7 @@ function UserOverview() {
               <Card.Text>
                 Full-time | IT
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -144,7 +144,7 @@ function UserOverview() {
               <Card.Text>
                 Full-time | IT-Services & Consulting
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -161,7 +161,7 @@ function UserOverview() {
               <Card.Text>
                 Part-time | Marketing
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -173,7 +173,7 @@ function UserOverview() {
               <Card.Text>
                 Full-time | Government
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
@@ -185,7 +185,7 @@ function UserOverview() {
               <Card.Text>
                 Full-time | Non-profit Organization
               </Card.Text>
-              <Link to="/user_jobdetail"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/user_jobdetail"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>

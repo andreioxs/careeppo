@@ -12,14 +12,14 @@ import team_rocket from '../images/Jobdetails/team_rocket.jpg';
 function UserProfile() {
   return (
     <>
-      <div className='d-flex w-100'>
+      <div xs='12' className='d-flex justify-content-end'>
         <Link to="/companyedit" style={{ textDecoration: 'none'  }}>
-          <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
+        <div xs='6' className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
             Edit your Profile
           </div>
         </Link><br></br>
         <Link to="/companyoverview" style={{ textDecoration: 'none' }}>
-          <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
+        <div xs='6' className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
             Your Overview
           </div>
         </Link>
@@ -58,13 +58,13 @@ function UserProfile() {
           </Row>
           <Row>
             <div md="12" className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
                 Pet
               </div>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
                 Slave
               </div>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
+              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
                 Pokémon
               </div>
             </div>

@@ -25,9 +25,9 @@ function UserProfile() {
     // </div>
 
     <>
-      <div xs="12" className='d-flex w-100'>
+      <div xs="12" className='d-flex justify-content-end'>
         <Link to="/companyoverview" style={{ textDecoration: 'none' }}>
-          <div className="bg-light mb-4  p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
+          <div className="bg-light mb-4 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
             Back to Overview
           </div>
         </Link>
@@ -35,9 +35,8 @@ function UserProfile() {
       <Container xs="12" className='d-flex'>
         <Col xs="4"  className='justify-content-center'>
           <Row className='justify-content-center'>
-            
               <div className='d-flex justify-content-evenly'>
-                <img src={team_rocket} style={{ height: '20rem', width: '90%' }} />
+                <img src={team_rocket} style={{ height: '20rem', width: '100%' }} />
               </div>
             
           </Row>

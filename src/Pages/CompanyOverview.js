@@ -26,39 +26,37 @@ function CompanyOverview() {
     // </div>
 
     <>
-      <Row>
-        <Col sm="12" >
-          <div className="bg-white my-3 rounded-pill">
-            <div className="text-center p-5">
+      <Row className='justify-content-center'>
+        <Col xs="12" >
+          <div className="bg-white mx-5 rounded-4 opacity-75">
+            <div className="text-center text-dark p-2 ">
               <h2 className='fw-bold'>Welcome back COMPANY,</h2><br></br>
               <p>You have <b>XX</b> new Evaluations, <b>XX</b> Bookmarked, <b>XX</b> Views.</p>
             </div>
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col>
-        </Col>
-        <Col sm="2">
+      <Row className='justify-content-evenly'>
+        <Col xs="12" md="4">
         <Link to="/companyjobadd" style={{ textDecoration: 'none' }}>
-          <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold">
+          <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
             Add new Job
           </div>
           </Link>
         </Col>
-        <Col sm="2">
+        <Col xs="12" md="4">
           <Link to="/companyprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold">
+            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
             Company Profile
           </div>
           </Link>
         </Col>
       </Row>
       <Row>
-        <Col sm="12">
+        <Col xs="12">
           <h2 className="text-white my-4">Your Job Postings</h2>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={hacker} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -66,11 +64,11 @@ function CompanyOverview() {
               <Card.Text>
                 XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={e_sport} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -78,11 +76,11 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={team_rocket} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -90,13 +88,13 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
       </Row>
       <Row>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={frontend_dev} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -104,11 +102,11 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={backend_dev} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -116,11 +114,11 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={scrum_master} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -128,13 +126,13 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
       </Row>
       <Row>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={Data_analyst} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -142,11 +140,11 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={date_science} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -154,11 +152,11 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
-        <Col sm="4">
+        <Col xs='12' md="4">
           <Card className='my-4'>
           <Link to="/companyevaluation"><Card.Img variant="top" src={pokemon_police} style={{ height: '18rem' }} /></Link>
             <Card.Body>
@@ -166,7 +164,7 @@ function CompanyOverview() {
               <Card.Text>
               XX Evaluations | XX Bookmarked | XXX Views
               </Card.Text>
-              <Link to="/companyevaluation"><Button variant="primary">Job Details</Button></Link>
+              <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
           </Card>
         </Col>
