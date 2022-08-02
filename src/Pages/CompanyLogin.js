@@ -90,7 +90,7 @@ function App() {
                 />
                 <label className="form-check-label">Save me</label>
               </div>
-              <Link to="/useroverview">
+              <Link to="/companyoverview">
                 <button type="submit" className="btn btn-primary">
                   Submit
                 </button>

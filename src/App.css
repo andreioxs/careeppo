@@ -17,7 +17,7 @@ background-color: #000;
 .left-nav{
   background: none;
 } */
-
+/* 
 .right-nav{
   width: 75vw;
   display: flex;
@@ -26,14 +26,14 @@ background-color: #000;
   margin-right: 3rem;
   gap: 3rem;
     
-}
-
+} */
+/* 
 .right-nav a{
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
-}
-
+} */
+/* 
 .header {
   color: black;
   background-color: rgba(255, 255, 255, 0.6);
@@ -49,4 +49,4 @@ background-color: #000;
   border-radius: 3rem;
   justify-content: center;
   background: none;
-}
+} */

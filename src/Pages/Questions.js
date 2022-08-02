@@ -15,7 +15,7 @@ function QuizStart() {
     // </div>
     <>
       <Container xs="12">
-        <div className='d-flex w-100'>
+        <div className='d-flex w-100 justify-content-end'>
           <Link to="/useroverview" style={{ textDecoration: 'none' }}>
             <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
               Back to Overview

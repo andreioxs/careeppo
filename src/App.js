@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
-import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -31,58 +31,52 @@ import ErrorPage from "./Pages/ErrorPage";
 function App() {
   return (
     <Router>
-      <Container sm='12' md='12' xl='12'>
-      <Navbar >  
-        
-      {/* <div class="col col-md-6 col-lg-2"></div> */}
+      <Container xs='12' md='12' xl='12'>
+        <Navbar xs="12" style={{ justifyContent: 'space-between' }}>
 
-          <div className='image'>
+          {/* <div class="col col-md-6 col-lg-2"></div> */}
+
+          <div xs='4' >
             <Link to="/"><img src={image} alt="careeppo" /></Link>
           </div>
-        
-        <div className='right-nav'>
-          {/* <Link to="/">
-            <div className='header'>
-              Home
-            </div>
-          </Link> */}
-          <Link to="/howitworks">
-            <div className='header'>
-            How it works
-            </div>
-          </Link>
-          <Link to="/about">
-            <div className='header'>
-              About us
-            </div>
-          </Link>
-        </div>  
-      </Navbar>
+          <div xs='8' className='d-flex'>
+            <Link to="/howitworks" style={{ textDecoration: 'none' }}>
+              <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+                How it works
+              </div>
+            </Link>
+            <Link to="/about" style={{ textDecoration: 'none' }}>
+              <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+                About us
+              </div>
+            </Link>
+          </div>
+        </Navbar>
       </Container>
-      <Container sm='12' md='12' xl='12' style={{background: "transparent"}}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/howitworks" element={<HowItWorks />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/userlogin" element={<UserLogin />} />
-        <Route path="/userregister" element={<UserRegister />} />
-        <Route path="/useroverview" element={<UserOverview />} />
-        <Route path="/userprofile" element={<UserProfile />} />
-        <Route path="/useredit" element={<UserEdit />} />
-        <Route path="/user_jobdetail" element={<User_JobDetail />} />
-        <Route path="/quizstart" element={<QuizStart />} />
-        <Route path="/questions" element={<Questions />} />
-        <Route path="/quizend" element={<QuizEnd />} />
-        <Route path="/companylogin" element={<CompanyLogin />} />
-        <Route path="/companyprofile" element={<CompanyProfile />} />
-        <Route path="/companyedit" element={<CompanyEdit />} />
-        <Route path="/companyoverview" element={<CompanyOverview />} />
-        <Route path="/companyjobadd" element={<CompanyJobAdd />} />
-        <Route path="/companyevaluation" element={<CompanyEvaluation />} />
-        <Route path="/companyreviewapplicant" element={<CompanyReviewApplicant />} />
-        <Route path="/companycontactapplicant" element={<CompanyContactApplicant />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <Container sm='12' md='12' xl='12' style={{ background: "transparent" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/howitworks" element={<HowItWorks />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/userlogin" element={<UserLogin />} />
+          <Route path="/userregister" element={<UserRegister />} />
+          <Route path="/useroverview" element={<UserOverview />} />
+          <Route path="/userprofile" element={<UserProfile />} />
+          <Route path="/useredit" element={<UserEdit />} />
+          <Route path="/user_jobdetail" element={<User_JobDetail />} />
+          <Route path="/quizstart" element={<QuizStart />} />
+          <Route path="/questions" element={<Questions />} />
+          <Route path="/quizend" element={<QuizEnd />} />
+          <Route path="/companylogin" element={<CompanyLogin />} />
+          <Route path="/companyprofile" element={<CompanyProfile />} />
+          <Route path="/companyedit" element={<CompanyEdit />} />
+          <Route path="/companyoverview" element={<CompanyOverview />} />
+          <Route path="/companyjobadd" element={<CompanyJobAdd />} />
+          <Route path="/companyevaluation" element={<CompanyEvaluation />} />
+          <Route path="/companyreviewapplicant" element={<CompanyReviewApplicant />} />
+          <Route path="/companycontactapplicant" element={<CompanyContactApplicant />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
       </Container>
     </Router>
   );
