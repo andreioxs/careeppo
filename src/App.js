@@ -41,7 +41,11 @@ function App() {
             <Link to="/"><img src={image} alt="careeppo" /></Link>
           </div>
           <div xs='8' className='d-flex'>
-            <Link to="/howitworks" style={{ textDecoration: 'none' }}>
+            
+            
+            
+            
+            {/* <Link to="/howitworks" style={{ textDecoration: 'none' }}>
               <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
                 How it works
               </div>
@@ -50,7 +54,7 @@ function App() {
               <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
                 About us
               </div>
-            </Link>
+            </Link> */}
           </div>
         </Navbar>
       </Container>
