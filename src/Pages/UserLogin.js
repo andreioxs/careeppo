@@ -1,32 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import UserOverview from "./UserOverview"
 import UserRegister from "./UserRegister";
+import { useState } from "react"
+import { useLogin } from "../hooks/useLogin"
 
-// function UserLogin() {
-//   return (
-//     <Container>
-//       <div>
-//         <Link to="/userprofile">User Profile</Link><br></br>
-//         <Link to="/userregister">User Registration</Link>
+function UserLogin() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const { login, error, isLoading } = useLogin()
 
-//       </div>
-//     </Container>
-//   )
-// }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
 
-
-function App() {
+    await login(email, password)
+  }
 
   return (
-    <div className="App">
+    <div className="UserLogin">
       <div className="container">
         <div className="row d-flex justify-content-center">
           <div className="col-xl-8 rounded-4 p-4 justify-content-center" style={{ backgroundColor: '#fffffff2' }}>
             <h3>Sign In</h3>
-            <form id="loginform" >
+            <form id="loginform" onSubmit={handleSubmit}>
               <div className="form-group my-3">
                 <label>Email address</label>
                 <input
@@ -36,6 +34,8 @@ function App() {
                   name="EmailInput"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                 />
 
               </div>
@@ -43,6 +43,8 @@ function App() {
                 <label>Password</label>
                 <input
                   type="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
                   className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
@@ -57,21 +59,17 @@ function App() {
                 />
                 <label className="form-check-label">Save me</label>
               </div>
-              <Link to="/useroverview">
-                <button type="submit" className="btn btn-primary">
-                  Submit
-                </button>
-              </Link>
+              <button disabled={isLoading}>Log in</button>
+              {error && <div className="error">{error}</div>}
             </form><br></br>
             <Link to="/userregister">No Account? Sign up here. </Link>
           </div>
-
         </div>
       </div>
     </div>
   );
 }
-export default App;
+export default UserLogin;
 
 
 // export default UserLogin
