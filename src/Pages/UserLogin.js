@@ -15,7 +15,8 @@ function UserLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    await login(email, password)
+    await login(email, password, 'user')
+    // await login(email, password, 'company')
   }
 
   return (
