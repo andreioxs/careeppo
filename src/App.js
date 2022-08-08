@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
+import { Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Home from "./Pages/Home";
@@ -26,10 +27,18 @@ import CompanyContactApplicant from "./Pages/CompanyContactApplicant";
 import image from "./images/careeppo.png";
 import ErrorPage from "./Pages/ErrorPage";
 import { AuthContext } from './context/AuthContext';
-
+import { useLogout } from './hooks/useLogout'
+import { useAuthContext } from './hooks/useAuthContext'
 
 
 function App() {
+
+  const { logout } = useLogout()
+  const { user } = useAuthContext()
+
+  const handleClick = () => {
+    logout()
+  }
   return (
     <Router>
       <Container xs='12' md='12' xl='12'>
@@ -41,10 +50,16 @@ function App() {
             <Link to="/"><img src={image} alt="careeppo" /></Link>
           </div>
           <div xs='8' className='d-flex'>
-            
-            
-            
-            
+            {user && (
+              <div className='d-flex'>
+                <div className='mx-4'>
+                  <Link to="/useroverview" className='mx-4' style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Overview</Link>
+                </div>
+                <Link to="/userprofile" className='mx-4' style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}><span className='mx-4'>{user.email}</span></Link>
+                <button onClick={handleClick}>Log out</button>
+              </div>
+            )}
+
             {/* <Link to="/howitworks" style={{ textDecoration: 'none' }}>
               <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
                 How it works
@@ -85,8 +100,9 @@ function App() {
       </Container>
     </Router>
 
-    
+
   );
 }
+
 
 export default App;
