@@ -60,7 +60,7 @@ function CompanyLogin() {
               <button disabled={isLoading}>Log in</button>
               {error && <div className="error">{error}</div>}
             </form><br></br>
-            
+
           </div>
 
         </div>

@@ -24,21 +24,12 @@ import team_rocket from '../images/Jobdetails/team_rocket.jpg'
 
 function UserOverview() {
   return (
-    // <div>
-    //   <Link to="/userprofile">User Profile</Link><br></br>
-    //   <Link to="/user_jobdetail">Pokémon Trainer</Link><br></br>
-    //   <Link to="/user_jobdetail">Pokémon Nurse</Link><br></br>
-    //   <Link to="/user_jobdetail">Pokémon Police</Link><br></br>
-    //   <Link to="/user_jobdetail">Team Rocket</Link><br></br>
-    // </div>
-
-    // <> FRAGMENT 
     <>
       <Row className='justify-content-center'>
         <Col xs="12">
           <div className="bg-white mx-5 rounded-4 opacity-75">
-            <div className="text-center text-dark p-2 ">
-              <h2 className='fw-bold '>Welcome back Hans-Jürgen,</h2><br></br>
+            <div className="text-center p-2 ">
+              <h2 className='fw-bold'>Welcome back ,</h2><br></br>
               <p>random motivational quotes :-)</p>
             </div>
           </div>

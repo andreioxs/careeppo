@@ -5,6 +5,8 @@ import { useSignup } from "../hooks/useSignup"
 
   const UserRegister = () => {
     const [email, setEmail] = useState('')
+    const [name, setName] = useState('')
+    const [firstname, setFirstName] = useState('')
     const [password, setPassword] = useState('')
     const { signup, error, isLoading } = useSignup('')
 
@@ -25,11 +27,19 @@ import { useSignup } from "../hooks/useSignup"
                 type="text"
                 className="form-control"
                 placeholder="First name"
+                onChange={(e) => setFirstName(e.target.value)}
+                value={firstname}
               />
             </div>
             <div className="mb-3">
               <label>Last name</label>
-              <input type="text" className="form-control" placeholder="Last name" />
+              <input
+              type="text"
+              className="form-control"
+              placeholder="Last name"
+              onChange={(e) => setName(e.target.value)}
+                value={name}
+              />
             </div>
             <div className="mb-3">
               <label>Email address</label>
@@ -52,7 +62,7 @@ import { useSignup } from "../hooks/useSignup"
               />
             </div>
             <div className="d-grid my-2">
-            <button disabled={isLoading}>Sign up</button>
+            <Link to="/userlogin"><button disabled={isLoading}>Sign up</button></Link>
               {error && <div className="error">{error}</div>}
             </div>
             <p className="fs-6">Already registered <Link to="/userlogin">Sign in?</Link>

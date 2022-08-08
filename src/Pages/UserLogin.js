@@ -52,15 +52,15 @@ function UserLogin() {
                 />
 
               </div>
-              <div className="form-group form-check">
+              {/* <div className="form-group form-check">
                 <input
                   type="checkbox"
                   className="form-check-input"
                   id="exampleCheck1"
                 />
                 <label className="form-check-label">Save me</label>
-              </div>
-              <button disabled={isLoading}>Log in</button>
+              </div> */}
+              <Link to="/useroverview"><button disabled={isLoading}>Log in</button></Link>
               {error && <div className="error">{error}</div>}
             </form><br></br>
             <Link to="/userregister">No Account? Sign up here. </Link>
@@ -71,6 +71,3 @@ function UserLogin() {
   );
 }
 export default UserLogin;
-
-
-// export default UserLogin
