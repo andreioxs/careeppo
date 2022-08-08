@@ -25,6 +25,7 @@ import CompanyReviewApplicant from "./Pages/CompanyReviewApplicant";
 import CompanyContactApplicant from "./Pages/CompanyContactApplicant";
 import image from "./images/careeppo.png";
 import ErrorPage from "./Pages/ErrorPage";
+import { AuthContext } from './context/AuthContext';
 
 
 
@@ -79,6 +80,8 @@ function App() {
         </Routes>
       </Container>
     </Router>
+
+    
   );
 }
 
