@@ -54,27 +54,27 @@ function CompanyReviewApplicant() {
         <div className="App">
           <div className="container">
             <div className="row d-flex justify-content-center">
-              <div className="col-xl-8 rounded-2 p-4 justify-content-center" style={{backgroundColor:'#fffffff2'}}>
-              <h3>Contact firstname Name</h3>
+              <div className="col-xl-8 rounded-2 p-4 justify-content-center" style={{ background: 'rgba(255,255,255,0.9)'}}>
+              <h3>Contact Ash Ketchum</h3>
                 <form id="loginform" onSubmit={loginSubmit}>
-                  <div className="form-group mt-5">
+                  <div className="form-group mt-3">
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="Subject"
+                      placeholder="Join Team Rocket"
                       onChange={(event) => setEmail(event.target.value)}
                     />
                   </div>
-                  <div className="form-group mt-5" >
+                  <div className="form-group mt-3" >
                     <input
                       type="text"
-                      style={{height:'20rem'}}
+                      style={{height:'10rem'}}
                       className="form-control"
                     />
                   </div>
                   
                   <Link to="/companyoverview">
-                    <button type="submit" className="btn btn-primary mt-2">
+                    <button type="submit" className="btn btn-warning mt-3">
                     Submit
                     </button>
                   </Link>

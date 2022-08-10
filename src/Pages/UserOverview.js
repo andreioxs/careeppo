@@ -27,7 +27,7 @@ function UserOverview() {
     <>
       <Row className='justify-content-center'>
         <Col xs="12">
-          <div className="bg-white mx-5 rounded-4 opacity-75">
+          <div className="mx-5 rounded-4" style={{ background: 'rgba(255,255,255,0.9)' }}>
             <div className="text-center p-2 ">
               <h2 className='fw-bold'>Welcome back ,</h2><br></br>
               <p>random motivational quotes :-)</p>
@@ -38,21 +38,21 @@ function UserOverview() {
       <Row className='justify-content-evenly'>
         <Col xs="12" md="4">
           <Link to="/userprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+            <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold" style={{ background: 'rgba(255,255,255,0.9)' }}>
               Tests
             </div>
           </Link>
         </Col>
         <Col xs="12" md="4">
           <Link to="/userprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+            <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold" style={{ background: 'rgba(255,255,255,0.9)' }}>
               Check CV
             </div>
           </Link>
         </Col>
         <Col xs="12" md="4">
           <Link to="/userprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+            <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold" style={{ background: 'rgba(255,255,255,0.9)' }}>
               User Profile
             </div>
           </Link>

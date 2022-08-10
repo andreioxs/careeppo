@@ -27,59 +27,59 @@ function UserProfile() {
     <>
       <div xs="12" className='d-flex justify-content-end'>
         <Link to="/companyoverview" style={{ textDecoration: 'none' }}>
-          <div className="bg-light mb-4 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
+          <div className="mb-4 p-3 text-center rounded-5 text-dark fw-bold w-100" style={{ background: 'rgba(255,255,255,0.9)'}}>
             Back to Overview
           </div>
         </Link>
       </div>
       <Container xs="12" className='d-flex'>
-        <Col xs="4"  className='justify-content-center'>
+        <Col xs="4" className='justify-content-center'>
           <Row className='justify-content-center'>
-              <div className='d-flex justify-content-evenly'>
-                <img src={team_rocket} style={{ height: '20rem', width: '100%' }} />
-              </div>
-            
+            <div className='d-flex justify-content-evenly offset-1'>
+              <img src={team_rocket} style={{ height: '20rem', width: '100%' }} />
+            </div>
+
           </Row>
           <Row>
-            <Col xs="9"  className='d-flex justify-content-evenly '>
-            <div className="bg-light my-4 p-3 text-center rounded-1 text-dark fw-bold w-75 opacity-75">
+            <Col xs="9" className='d-flex justify-content-evenly '>
+              <div className="my-4 p-3 text-center rounded-1 text-dark fw-bold w-75" style={{ background: 'rgba(255,255,255,0.9)'}}>
                 Bookmarked
               </div>
             </Col>
-            <Col xs="3"  className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
-                XX
-              </div>
-            </Col>
-            </Row>
-            <Row>
-              <Col xs="9"  className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-1 text-dark fw-bold w-75 opacity-75">
-                Evaluated
-              </div>
-              </Col>
-            <Col xs="3"  className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
-                33
-              </div>
-            </Col>
-            </Row>
-            <Row>
-              <Col xs="9"  className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-1 text-dark fw-bold w-75 opacity-75">
-                Ends in (days)
-              </div>
-              </Col>
-            <Col xs="3"  className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-75 opacity-75">
+            <Col xs="3" className='d-flex justify-content-evenly '>
+              <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold w-75" style={{ background: 'rgba(255,255,255,0.9)'}}>
                 12
               </div>
             </Col>
-            </Row>
+          </Row>
+          <Row>
+            <Col xs="9" className='d-flex justify-content-evenly '>
+              <div className="my-4 p-3 text-center rounded-1 text-dark fw-bold w-75" style={{ background: 'rgba(255,255,255,0.9)'}}>
+                Evaluated
+              </div>
+            </Col>
+            <Col xs="3" className='d-flex justify-content-evenly '>
+              <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold w-75" style={{ background: 'rgba(255,255,255,0.9)'}}>
+                33
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs="9" className='d-flex justify-content-evenly '>
+              <div className="my-4 p-3 text-center rounded-1 text-dark fw-bold w-75" style={{ background: 'rgba(255,255,255,0.9)'}}>
+                Ends in (days)
+              </div>
+            </Col>
+            <Col xs="3" className='d-flex justify-content-evenly '>
+              <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold w-75" style={{ background: 'rgba(255,255,255,0.9)'}}>
+                12
+              </div>
+            </Col>
+          </Row>
         </Col>
         <Col className='h-25 w-100% justify-content-center offset-1' md="8">
           <Row>
-            <div className="bg-white rounded mb-2 opacity-75">
+            <div className="rounded mb-2" style={{ background: 'rgba(255,255,255,0.9)'}}>
               <div className="text-center p-2">
                 <h2 className='fw-bold fs-1'>Rocket Bully</h2><br></br>
                 <p className='fs-3'>Team Rocket Ltd.</p>
@@ -87,50 +87,124 @@ function UserProfile() {
             </div>
           </Row>
           <Row>
-            <div className="bg-white rounded mb-2 opacity-75">
+            <div className="rounded mb-2" style={{ background: 'rgba(255,255,255,0.9)'}}>
+              <div className="text-center pt-3">
+                <h2 className='fw-bold fs-3'>Search/Filter Bar</h2><br></br>
+              </div>
+            </div>
+          </Row><hr></hr>
+          <Row>
+            <div className="rounded my-2  w-100" style={{ background: 'rgba(255,255,255,0.9)'}}>
               <div className="text-center p-2">
-                <h2 className='fw-bold fs-1'>Search/Filter Bar</h2><br></br>
+                <Row className='rounded justify-content-center  mb-2 p-2'>
+                  <Link to="/companyreviewapplicant" style={{ textDecoration: 'none' }}>
+                    <h2 className='fw-bold text-dark fs-3'>Gary Eich</h2><br></br>
+                    <div className=" rounded text-center text-dark " style={{ background: 'rgba(249,180,45,0.8)' }}>
+                      <Row>
+                        <div className='d-flex justify-content-evenly mt-3'>
+                          <p><b>89%</b> Overall</p>
+                          |
+                          <p><b>98%</b> Dominating the World</p>
+                          <p><b>80%</b> Toxication</p>
+                          <p><b>88%</b> Bad Manners</p>
+                        </div>
+                      </Row>
+                    </div>
+                  </Link>
+                </Row>
               </div>
             </div>
           </Row>
-          <Container className="bg-white rounded my-2  w-100">
           <Row>
-            
+          <div className="rounded my-2  w-100" style={{ background: 'rgba(255,255,255,0.9)'}}>
               <div className="text-center p-2">
-                <div>{Evaluation}</div>
-              </div>
-            
-          </Row><hr></hr>
-          <Row>
-            <div className="bg-white rounded p-2">
-              <div className="text-center p-2">
-                <div>{Evaluation}</div>
-              </div>
-            </div>
-          </Row><hr></hr>
-          <Row>
-            <div className="bg-white rounded p-2">
-              <div className="text-center p-2">
-                <div>{Evaluation}</div>
-              </div>
-            </div>
-          </Row><hr></hr>
-          <Row>
-            <div className="bg-white rounded p-2">
-              <div className="text-center p-2">
-                <div>{Evaluation}</div>
+                <Row className='rounded justify-content-center  mb-2 p-2'>
+                  <Link to="/companyreviewapplicant" style={{ textDecoration: 'none' }}>
+                    <h2 className='fw-bold text-dark fs-3'>Misty Waterflower</h2><br></br>
+                    <div className=" rounded text-center text-dark " style={{ background: 'rgba(249,180,45,0.8)' }}>
+                      <Row>
+                        <div className='d-flex justify-content-evenly mt-3'>
+                          <p><b>57%</b> Overall</p>
+                          |
+                          <p><b>22%</b> Dominating the World</p>
+                          <p><b>75%</b> Toxication</p>
+                          <p><b>75%</b> Bad Manners</p>
+                        </div>
+                      </Row>
+                    </div>
+                  </Link>
+                </Row>
               </div>
             </div>
-          </Row><hr></hr>
+          </Row>
           <Row>
-            <div className="bg-white rounded p-2">
+          <div className="rounded my-2  w-100" style={{ background: 'rgba(255,255,255,0.9)'}}>
               <div className="text-center p-2">
-                <div>{Evaluation}</div>
+                <Row className='rounded justify-content-center  mb-2 p-2'>
+                  <Link to="/companyreviewapplicant" style={{ textDecoration: 'none' }}>
+                    <h2 className='fw-bold text-dark fs-3'>Ash Ketchum</h2><br></br>
+                    <div className=" rounded text-center text-dark " style={{ background: 'rgba(249,180,45,0.8)' }}>
+                      <Row>
+                        <div className='d-flex justify-content-evenly mt-3'>
+                          <p><b>55%</b> Overall</p>
+                          |
+                          <p><b>100%</b> Dominating the World</p>
+                          <p><b>5%</b> Toxication</p>
+                          <p><b>60%</b> Bad Manners</p>
+                        </div>
+                      </Row>
+                    </div>
+                  </Link>
+                </Row>
+              </div>
+            </div>
+          </Row>
+          <Row>
+          <div className="rounded my-2  w-100" style={{ background: 'rgba(255,255,255,0.9)'}}>
+              <div className="text-center p-2">
+                <Row className='rounded justify-content-center  mb-2 p-2'>
+                  <Link to="/companyreviewapplicant" style={{ textDecoration: 'none' }}>
+                    <h2 className='fw-bold text-dark fs-3'>Rocko Brock</h2><br></br>
+                    <div className=" rounded text-center text-dark " style={{ background: 'rgba(249,180,45,0.8)' }}>
+                      <Row>
+                        <div className='d-flex justify-content-evenly mt-3'>
+                          <p><b>28%</b> Overall</p>
+                          |
+                          <p><b>28%</b> Dominating the World</p>
+                          <p><b>25%</b> Toxication</p>
+                          <p><b>30%</b> Bad Manners</p>
+                        </div>
+                      </Row>
+                    </div>
+                  </Link>
+                </Row>
+              </div>
+            </div>
+          </Row>
+          <Row>
+          <div className="rounded my-2  w-100" style={{ background: 'rgba(255,255,255,0.9)'}}>
+              <div className="text-center p-2">
+                <Row className='rounded justify-content-center  mb-2 p-2'>
+                  <Link to="/companyreviewapplicant" style={{ textDecoration: 'none' }}>
+                    <h2 className='fw-bold text-dark fs-3'>Abra Kadabra</h2><br></br>
+                    <div className=" rounded text-center text-dark " style={{ background: 'rgba(249,180,45,0.8)' }}>
+                      <Row>
+                        <div className='d-flex justify-content-evenly mt-3'>
+                          <p><b>26%</b> Overall</p>
+                          |
+                          <p><b>12%</b> Dominating the World</p>
+                          <p><b>45%</b> Toxication</p>
+                          <p><b>20%</b> Bad Manners</p>
+                        </div>
+                      </Row>
+                    </div>
+                  </Link>
+                </Row>
               </div>
             </div>
           </Row>
 
-          </Container>
+
         </Col>
       </Container>
     </>

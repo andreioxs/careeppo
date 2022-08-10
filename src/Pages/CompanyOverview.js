@@ -28,10 +28,10 @@ function CompanyOverview() {
     <>
       <Row className='justify-content-center'>
         <Col xs="12" >
-          <div className="bg-white mx-5 rounded-4 opacity-75">
+          <div className="mx-5 rounded-4" style={{ background: 'rgba(255,255,255,0.9)'}}>
             <div className="text-center text-dark p-2 ">
-              <h2 className='fw-bold'>Welcome back COMPANY,</h2><br></br>
-              <p>You have <b>XX</b> new Evaluations, <b>XX</b> Bookmarked, <b>XX</b> Views.</p>
+              <h2 className='fw-bold'>Welcome back Giovanni,</h2><br></br>
+              <p>You have <b>113</b> new Evaluations, <b>33</b> Bookmarked, <b>1.864</b> Views.</p>
             </div>
           </div>
         </Col>
@@ -39,14 +39,14 @@ function CompanyOverview() {
       <Row className='justify-content-evenly'>
         <Col xs="12" md="4">
         <Link to="/companyjobadd" style={{ textDecoration: 'none' }}>
-          <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+          <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold" style={{ background: 'rgba(255,255,255,0.9)'}}>
             Add new Job
           </div>
           </Link>
         </Col>
         <Col xs="12" md="4">
           <Link to="/companyprofile" style={{ textDecoration: 'none' }}>
-            <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
+            <div className="my-4 p-3 text-center rounded-5 text-dark fw-bold" style={{ background: 'rgba(255,255,255,0.9)'}}>
             Company Profile
           </div>
           </Link>
@@ -62,7 +62,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Anonymous Hacker</Card.Title>
               <Card.Text>
-                XX Evaluations | XX Bookmarked | XXX Views
+                <b>6</b> Evaluations | <b>28</b> Bookmarked | <b>33</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -74,7 +74,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>E-Sportler</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>6</b> Evaluations | <b>28</b> Bookmarked | <b>33</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -86,7 +86,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Join Team Rocket</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>33</b> Evaluations | <b>12</b> Bookmarked | <b>324</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -100,7 +100,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Frontend Developer</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>11</b> Evaluations | <b>28</b> Bookmarked | <b>128</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -112,7 +112,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Backend Developer</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>2</b> Evaluations | <b>12</b> Bookmarked | <b>-30</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -124,7 +124,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Agile Scrum Master</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>22</b> Evaluations | <b>15</b> Bookmarked | <b>66</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -138,7 +138,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Data Analyst</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>3</b> Evaluations | <b>12</b> Bookmarked | <b>321</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -150,7 +150,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Data Science</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>33</b> Evaluations | <b>33</b> Bookmarked | <b>33</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
@@ -162,7 +162,7 @@ function CompanyOverview() {
             <Card.Body>
               <Card.Title className='fw-bold'>Pokemon Police</Card.Title>
               <Card.Text>
-              XX Evaluations | XX Bookmarked | XXX Views
+              <b>326</b> Evaluations | <b>2</b> Bookmarked | <b>868</b> Views
               </Card.Text>
               <Link to="/companyevaluation"><Button variant="warning">Job Details</Button></Link>
             </Card.Body>
