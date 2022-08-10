@@ -62,7 +62,7 @@ import { useSignup } from "../hooks/useSignup"
               />
             </div>
             <div className="d-grid my-2">
-            <Link to="/userlogin"><button disabled={isLoading}>Sign up</button></Link>
+            <button disabled={isLoading}>Sign up</button>
               {error && <div className="error">{error}</div>}
             </div>
             <p className="fs-6">Already registered <Link to="/userlogin">Sign in?</Link>

@@ -3,12 +3,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import CompanyOverview from "./CompanyOverview";
 import { useState } from "react"
-import { useLogin } from "../hooks/useLogin"
+import { useCompanyLogin } from '../hooks/useCompanyLogin'
 
 function CompanyLogin() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { login, error, isLoading } = useLogin()
+  const { login, error, isLoading } = useCompanyLogin()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -49,14 +49,7 @@ function CompanyLogin() {
                 />
 
               </div>
-              <div className="form-group form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label className="form-check-label">Save me</label>
-              </div>
+              
               <button disabled={isLoading}>Log in</button>
               {error && <div className="error">{error}</div>}
             </form><br></br>

@@ -50,17 +50,8 @@ function UserLogin() {
                   id="exampleInputPassword1"
                   placeholder="Password"
                 />
-
               </div>
-              {/* <div className="form-group form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label className="form-check-label">Save me</label>
-              </div> */}
-              <Link to="/useroverview"><button disabled={isLoading}>Log in</button></Link>
+                <button disabled={isLoading}>Log in</button>
               {error && <div className="error">{error}</div>}
             </form><br></br>
             <Link to="/userregister">No Account? Sign up here. </Link>

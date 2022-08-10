@@ -5,72 +5,30 @@ import QuizEnd from './QuizEnd';
 import { Container } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
-import { html } from '../Components/html';
 
-function QuizStart() {
-  const [showResults, setShowResults] = useState(false);
+export default function Questions() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [disabled, setDisabled] = useState(false);
+  const [answers, setAnswers] = useState([]);
+  const [questions, setQuestions] = useState([]);
 
-  const [questions, setQuestions] = useState([...html, ...js, ...css]);
-  const [select, setSelect] = useState(true);
-  const [selectJS, setSelectJS] = useState(true);
-  const [html, setHtml] = useState(true);
-  const [react, setReact] = useState(true);
-
-  const optionClicked = (isCorrect) => {
-    // Increment the score
-    if (isCorrect) {
-      setScore(score + 1);
-    }
-
-    if (currentQuestion + 1 < questions.length) {
-      setCurrentQuestion(currentQuestion + 1);
-    } else {
-      setShowResults(true);
-    }
-  };
-
-  const restartGame = () => {
-    setScore(0);
-    setCurrentQuestion(0);
-    setShowResults(false);
-    setDisabled(false);
-  };
-  const change = () => {
-    setSelect(!select);
-  };
-
-
+ 
   useEffect(() => {
-    if (select && selectJS) {
-      setQuestions([...html, ...js, ...css]);
-    } else if (!select) {
-      setQuestions([...js]);
-    } else if (!select) {
-      setQuestions([...html]);
-    } else if (!select) {
-      setQuestions([...css]);
-    }
-  }, [select]);
-
+    fetch("http://localhost:9191/api/questions")
+    .then(res => res.json())
+    .then(data => {
+      setQuestions(data);
+    })
+  }, []);
+  const submitAnswer = () => {
+    
+  }
   useEffect(() => {
-    if (currentQuestion > 0) {
-      setDisabled(true);
+    if(questions.length && questions.length === answers.length) {
+      alert("finished!! sending answers to server")
     }
-  }, [currentQuestion]);
-
-  useEffect(() => {
-    if (select && selectJS) {
-      setQuestions([...html, ...js, ...css]);
-    } else if (!selectJS) {
-      setQuestions([...html]);
-    }
-  }, [selectJS]);
-
+  }, []);
+  
   return (
-
     <>
       <Container xs="12">
         <div className='d-flex w-100 justify-content-end'>
@@ -81,11 +39,12 @@ function QuizStart() {
           </Link>
         </div>
         <div>
-          <div className="bg-white rounded my-2 opacity-75">
+          {questions.length && questions[answers.length] && (
+            <div className="bg-white rounded my-2 opacity-75">
             <div className="text-center p-5 text-dark">
-              <h2 className='fw-bold fs-1'>What does HTML stand for</h2><br></br>
+              <h2 className='fw-bold fs-1'>{questions[answers.length].question}</h2><br></br>
               <div className="text-end p-2 fs-5">
-                <p><b>Questions:</b> 1 | 20<hr></hr></p>
+                <p><b>Questions:</b> {answers.length + 1 } | 20<hr></hr></p>
                 <div className='text-start fs-4'>
                   <Form>
                     {['checkbox'].map((type) => (
@@ -112,20 +71,17 @@ function QuizStart() {
                 </div>
               </div>
             </div>
-
           </div>
-        </div>
-        <Link to="/quizend" style={{ textDecoration: 'none' }}>
-          <button className="bg-light p-2 text-center rounded-2 text-dark fw-bold w-100 opacity-75">
+          )}
+
+         </div>
+        {/* <Link to="/quizend" style={{ textDecoration: 'none' }}> */}
+          <button onClick={submitAnswer} className="bg-light p-2 text-center rounded-2 text-dark fw-bold w-100 opacity-75">
             Submit
           </button>
-        </Link>
-
+        {/* </Link> */}
       </Container >
-
-
     </>
   )
 }
 
-export default QuizStart

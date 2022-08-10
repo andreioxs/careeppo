@@ -43,33 +43,17 @@ function App() {
     <Router>
       <Container xs='12' md='12' xl='12'>
         <Navbar xs="12" style={{ justifyContent: 'space-between' }}>
-
-          {/* <div class="col col-md-6 col-lg-2"></div> */}
-
           <div xs='4' >
             <Link to="/"><img src={image} alt="careeppo" /></Link>
           </div>
           <div xs='8' className='d-flex'>
             {user && (
               <div className='d-flex'>
-                <div className='mx-4'>
-                  <Link to="/useroverview" className='mx-4' style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}>Overview</Link>
-                </div>
                 <Link to="/userprofile" className='mx-4' style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}><span className='mx-4'>{user.email}</span></Link>
-                <button onClick={handleClick}>Log out</button>
+                <Link to="/"><button onClick={handleClick}>Log out</button></Link>
               </div>
             )}
 
-            {/* <Link to="/howitworks" style={{ textDecoration: 'none' }}>
-              <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
-                How it works
-              </div>
-            </Link>
-            <Link to="/about" style={{ textDecoration: 'none' }}>
-              <div className="bg-light mb-4 mx-2 p-3 text-center rounded-5 text-dark fw-bold opacity-75">
-                About us
-              </div>
-            </Link> */}
           </div>
         </Navbar>
       </Container>

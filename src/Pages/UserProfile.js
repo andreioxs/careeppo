@@ -24,22 +24,22 @@ function UserProfile() {
           </div>
         </Link>
       </div>
-      <Container xs="12" className='d-flex'>
+      <Container fluid="lg" className='d-flex'>
         <Col md="4" className='justify-content-center'>
-          <Row className='justify-content-center'>
-            <div className='offset-1'>
-              <img src={ash_pp} style={{ height: '20rem', width:'100%' }} />
+        <Row className='offset-1'>
+            <div>
+              <img src={ash_pp} style={{ height: '20rem' }} />
             </div>
           </Row>
           <Row>
-            <div xs="12" md="4" className='d-flex justify-content-evenly '>
-              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
+            <div md="12" className='d-flex justify-content-evenly '>
+              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                 Pet
               </div>
-              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
+              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                 Slave
               </div>
-              <div className="bg-light my-4 mx-1 p-3 text-center rounded-5 text-dark fw-bold w-100 opacity-75">
+              <div className="bg-light my-4 p-3 text-center rounded-5 text-dark fw-bold w-25 opacity-75">
                 Pokémon
               </div>
             </div>
