@@ -13,7 +13,7 @@ import { Form } from 'react-bootstrap';
 
 
   //   useEffect(() => {
-  //     fetch("http://localhost:9191/api/questions")
+  //     fetch(`${process.env.REACT_APP_HOST}/api/questions`)
   //     .then(res => res.json())
   //     .then(data => {
   //       setQuestions(data);
